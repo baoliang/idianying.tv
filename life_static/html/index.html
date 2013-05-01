@@ -1,0 +1,122 @@
+<!doctype html>
+<html ng-app="move">
+<head>
+	<title>爱上电影爱上生活!</title>
+<META   HTTP-EQUIV=”Pragma”   CONTENT=”no-cache”> 
+<META   HTTP-EQUIV=”Cache-Control”   CONTENT=”no-cache”> 
+<META   HTTP-EQUIV=”Expires”   CONTENT=”0”> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" href="/static/css/bootstrap.min.css?v=1"
+	rel="stylesheet" />	
+    <link type="text/css" href="/static/css/move.css?v=0.2"
+	rel="stylesheet" />	
+	<link rel='shortcut icon' href='/static/images/facicon.ico?' />
+</head>
+<body>  
+	<div class="wrap">
+		<div class="container" >
+			<div  class="top"  ng-controller="SearchCtr">	
+				<div>
+					<form ng-submit="search()">
+						<input ng-model="search_txt" value="" class="search-query input-large">
+						<a class="btn" href="" ng-click="search()">搜索</a>
+					</form>
+				</div>
+				<div>
+<div class="navbar navbar-inverse" style="position: static;">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".subnav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+               
+                  <div class="nav-collapse subnav-collapse">
+                    <ul class="nav">
+                      <li  class="active" id="all">
+                            	   <a class="brand"  href="/"  >全部</a>
+                      </li>
+          						<li id="xiju">
+          							<a href="#/喜剧片/xiju"  >喜剧片</a>
+          						</li>
+          						<li id="aiqing">
+          							<a href="#爱情片/aiqing" >爱情片</a>
+          						</li>
+          						<li id="dongzuo">
+          							<a href="#" ng-click="search('动作片', 'dongzuo')">动作片</a>
+          						</li>
+          						<li id="zhanzheng">
+          							<a href="#" ng-click="search('战争片', 'zhanzheng')">战争片</a>
+          						</li>
+          						<li id="kehuan">
+          							<a href="#" ng-click="search('科幻片', 'kehuan')">科幻片</a>
+          						</li>
+          						
+          						<li id="juqing">
+                        <a href="#" ng-click="search('剧情片', 'juqing')">剧情片</a>
+                      </li>
+          					
+          						<li id="kongbu">
+                        <a href="#" ng-click="search('恐怖片', 'kongbu')">恐怖片</a>
+                      </li>
+          						
+                      <li id="jilu">
+                        <a href="#" ng-click="search('纪录片', 'jilu')">纪录片</a>
+                      </li>
+          						<li id="daluju">
+                        <a href="#" ng-click="search('大陆剧', 'daluju')">大陆剧</a>
+                      </li>
+          						<li id="oumeiju">
+                        <a href="#" ng-click="search('欧美剧', 'oumeiju')">欧美剧</a>
+                      </li>
+          						<li id="gangtaiju">
+                        <a href="#" ng-click="search('港台剧', 'gangtaiju')">港台剧</a>
+                      </li>
+          						<li id="rihanju">
+                        <a href="#" ng-click="search('日韩', 'rihan')">日韩剧</a>
+                      </li>  			
+          						<li id="dongman">
+                        <a href="#" ng-click="search('动漫片','dongman')">动漫</a>
+                      </li>
+                      <li id="mtv">
+                        <a href="#" ng-click="search('QMV高清', 'mtv')">MTV</a>
+                      </li>
+         						  <li id="yinyue">
+                        <a href="#" ng-click="search('音乐', 'yinyue')">音乐</a>
+                      </li>
+         						  <li id="zongyi">
+                        <a href="#"  ng-click="search('综艺其它', 'zongyi')">综艺节目</a>
+                      </li>
+                     </ul>
+                    
+                    
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+            </div>
+						
+							
+				</div>
+			</div>
+			<div ng-view>
+			</div>	
+			<div class="foot">
+				本网站提供的最新电视剧和电影资源均系收集于各大视频网站，本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传。 
+
+			</div>
+			<div class="foot">
+				友情链接: <a href="http://www.lihuashu.com" target="_blank">梨花树</a> 
+			</div>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	  <script src="/static/js/angular.min.js"></script>
+
+	  <script src="/static/js/bootstrap.min.js"></script>
+	  <script src="/static/js/jquery.qvod.js?v=0.2"></script>
+	 <script src="/static/js/move.js?v=27"></script>
+</body>
+</html>
+
+	  <script src="/static/js/google.js?v=26"></script>

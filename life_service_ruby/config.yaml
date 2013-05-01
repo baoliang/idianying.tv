@@ -1,0 +1,61 @@
+PG:   
+  adapter: 'postgresql'  
+  host:     'localhost'
+  database: 'life_dev'   
+  username: 'postgres'     
+  password: 'wwwsunboy'
+
+MYSQL:
+  adapter: 'mysql'  
+  host:     'localhost'
+  database: 'gx_move'   
+  username: 'root'     
+  password: ''
+cat: 
+  -  
+    name: "电影"
+    list: 
+      - "喜剧片"
+      - "爱情片"
+      - "动作片"
+      - "科幻片"
+      - "战争片"
+      - "剧情片"
+      - "恐怖片"
+      
+  - 
+    name: "电视剧"
+    id: "dianshiju"
+    list:
+      - "大陆剧"
+        
+      - "欧美剧"
+        
+      - "港台剧"
+      
+      - "日韩剧"
+        
+      
+
+  - 
+    name: "动漫片"
+    id: "dongman"
+  - 
+    name: "QMV高清"
+    id: "mtv"
+  - 
+    name: "音乐"
+    id: "yinyue"
+  - 
+    name: "综艺其它"
+    id: "zongyi"
+  - 
+    name: "纪录片"
+    id: "jilu"
+menu:  
+  -  ["热门", "/"]
+  -  ["最新", "/?sort=update_time"]
+  -  ['得分', '/?sort=ups']
+  -  ['收藏', '/move/fav']
+  -  ['往事', '/move/his']
+    

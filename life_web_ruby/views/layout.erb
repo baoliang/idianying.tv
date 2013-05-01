@@ -1,0 +1,192 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<title>爱上电影爱上生活!</title>
+
+<META   HTTP-EQUIV=”Pragma”   CONTENT=”no-cache”> 
+<META   HTTP-EQUIV=”Cache-Control”   CONTENT=”no-cache”> 
+<META   HTTP-EQUIV=”Expires”   CONTENT=”0”> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta content="<%if seo%><%=seo%><%end%>" name="keywords">
+	<link type="text/css" href="<%=settings.static_url%>/css/bootstrap.min.css?v=1"
+	rel="stylesheet" />	
+    <link type="text/css" href="<%=settings.static_url%>/css/move.css?v=<%=settings.static_v%>"
+	rel="stylesheet" />	
+  <!--[if lt IE 8]>
+    <link href="http://idianying.b0.upaiyun.com/css/ie6.css" rel="stylesheet">
+<![endif]-->
+	<link rel='shortcut icon' href='http://idianying.b0.upaiyun.com/images/facicon.ico?v=<%=settings.static_v%>' />
+</head>
+<body>  
+  <input type="hidden" id="active" value="<%=session[:active]%>">
+  <input type="hidden" id="login_email" value="<%=session[:email]%>">
+	<div class="wrap">
+		<div class="container" >
+			<div  class="top">	
+				<div>
+          <a href="/">
+            <img src="<%=settings.static_url%>/images/logo.png" class="logo">
+					</a>  
+          
+          <form action="/" class="inline search_form search_input">
+
+            <input  name="fuck_g_0f0_w" value="<%=params[:fuck_g_0f0_w]%>" placeholder="电影、影人、电视剧" class="search-query input-large ">
+
+						<input type="submit" class="btn"   value="搜索">
+					</form>
+          <% if session[:email]%>
+          <span id="user_info" class="user_name">
+              <%=session[:name]%>
+            </span>
+            <span class="user_info">
+              <a href="/logout">退出</a>
+          </span>
+          <%else%>
+          <span id="user_info" class="hide">
+              <span id="user_name" class="user_name">
+              
+              </span>
+              <span class="user_info">
+                <a href="/logout">退出</a>
+              </span>
+          </span>
+          <span id="user_login"  class="user_info">想要加入？
+            <a href="#login" data-toggle="modal">
+              登录
+            </a>
+              或
+            <a href="#login" data-toggle="modal">
+              注册
+            </a>
+             只需几秒
+          </span>
+          <%end%>
+				</div>
+     <ul class="nav nav-tabs" ng-controller="MenuCtr">
+  
+       <%settings.menus.each do |m|%>
+        <li class="<%if session['active'] == m[0]%>
+            active
+                  <%end%>
+          " >
+          <a href="<%=m[1]%>"><%=m[0]%></a>
+        </li>
+        <%end%>
+      
+    </ul>
+			
+			</div>
+
+    
+      <div>
+        <%=yield%>
+      </div>
+      
+			<div class="foot">
+				本网站提供的最新电视剧和电影资源均系收集于各大视频网站，本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传。 
+
+			</div>
+			<div class="foot">
+				友情链接: <a href="http://www.lihuashu.com" target="_blank">梨花树</a> 
+			</div>
+		</div>
+	</div>
+<div class="modal bootbox  fade" id="login" ng-controller="UserCtr" >
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 id="myModalLabel">只能登陆才能做更多的事情哦，亲！</h4>
+  </div>
+  <div class="login">
+    
+  
+      <form class="form-inline" ng-submit="login()">
+        <div class="row">        
+          
+          <div class="span3">  
+             <span class="label-login">邮箱</span>
+             <input type="text" class="input-medium" ng-model="email" id="inputEmail" placeholder=""> 
+          </div>
+          <div class="span3">  
+            <div>
+            <span class="label-login">密码</span>
+            <input type="password" class="input-medium" ng-model="pwd" id="inputPassword" placeholder="">
+            </div>
+            <div id="login_tips" class="hide tips_error get_pwd">
+              帐号或密码错误
+            </div>
+            <div class="get_pwd hide">
+            <a href="/forget_pwd">忘记密码</a>
+            </div>
+            
+          </div>
+          <div class="span1">
+            <button type="submit" class="btn btn-primary">登陆</button>
+          </div>
+        </div>
+       
+        
+           
+         
+       </form>
+    </div>
+    <hr/>
+    <div class="">
+    <form class="form-horizontal" ng-submit="reg()">
+        <div class="control-group">
+          <label class="control-label"  for="inputEmail">邮箱</label>
+          <div class="controls">
+            <input type="text" id="inputEmail" ng-model="r_email" placeholder="">
+            <span class="tips_error">{{valid_email}}<span>
+          </div>
+        </div>
+         <div class="control-group">
+          <label class="control-label" for="inputPassword">称呼</label>
+          <div class="controls">
+            <input type="text" ng-model= "r_name"  id="inputPassword" placeholder="">
+            <span class="tips_error">{{valid_name}}<span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputPassword">密码</label>
+          <div class="controls">
+            <input type="password" ng-model= "r_pwd"  id="inputPassword" placeholder="">
+                <span class="tips_error">{{valid_pwd}}<span> 
+          </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPassword"></label>
+          <div class="controls"> 
+            <button type="submit" class="btn btn-success">注册</button>
+          </div>
+        </div>
+      </form>
+    </div>    
+  </div> 
+</div>  
+<%if settings.env == 'prd'%>  
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb7a01272ffa18ec72a6b96c71dde3c79' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<%end%>
+</body>
+</html>
+  <script src="<%=settings.static_url%>/js/jquery-1.8.1.min.js?v=1"></script>
+  <script src="<%=settings.static_url%>/js/jquery.qvod.js?v=1"></script>
+  <script type="text/javascript" src="<%=settings.static_url%>/js/bootstrap.min.js"></script>
+  <script src="<%=settings.static_url%>/js/angular.min.js?v=1"></script>
+  <script src="<%=settings.static_url%>/js/move.js?v=1<%=settings.static_v%>"></script>
+  <%unless session[:email]%>
+  <script>
+    if (location.pathname == "/move/fav" || location.pathname == "/move/his"){
+      $("#login").show()
+      $("#login").modal()
+    }
+  </script>
+  <%end%>
+
+  <script>
+      $(function(){if($.browser.msie&&parseInt($.browser.version,10)===6){$('.row div[class^="span"]:last-child').addClass("last-child");$('[class*="span"]').addClass("margin-left-20");$(':button[class="btn"], :reset[class="btn"], :submit[class="btn"], input[type="button"]').addClass("button-reset");$(":checkbox").addClass("input-checkbox");$('[class^="icon-"], [class*=" icon-"]').addClass("icon-sprite");$(".pagination li:first-child a").addClass("pagination-first-child")}})
+  </script>

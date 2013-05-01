@@ -1,0 +1,108 @@
+<div class="detail" ng-controller="MoveCtr">
+	<div class="detail_list">
+		<h2><%=move[:name]%></h2>
+		<div class="row">
+			<div class="span3">
+
+				<img  onerror="this.src='/static/images/no_haibao.jpeg'" src="<%=move[:source_img_url]%>" />
+					
+		
+					<div class="desc">
+				
+			<h4 class="desc_title"><%=move.name%>的剧情简介 ........</h3>
+			<%=move[:describe]%>
+		</div>
+	
+		<div class="comment_deep desc">
+			<h4 class="desc_title"><%=move.name%>的影评........</h3>
+			<div class="comment_list">
+					<!--<a >写影评</a>-->
+			</div>
+		</div>
+			</div>
+		    <div class="span2 detail_info">
+		    	<div>
+		    		导演: <%=move.director%>
+		    	</div>
+		    	<div class="detail_word actor">
+		    		主演:  <%=move.actor%>
+		    	</div>
+		    	<div class="detail_word">
+		    		类型: <%=move.label%>
+		    	</div>
+		    	<div class="detail_word">
+		    		 <%=move.status%>
+		    	
+		    	</div>
+
+          <div>
+            <a ng-click="plus_score(<%=move.id%>)">+</a>  
+              <span class="score_nums center" id="score_<%=move.id%>">
+                       
+                       
+                 <%=move.ups.to_i - move.downs.to_i%>
+                    
+              </span>
+            <a ng-click="sub_score(<%=move.id%>)">-</a>
+          </div>
+			
+					<div class="detail_word">		         	
+		    		 		<a href="#" class="social-share-button-weibo" data-title="<%=move.name%>,很好看哦。" data-id="<%=move.id%>"   data-img="<%=move.source_img_url%>"  data-site="weibo" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到新浪微博"></a>
+         				<a href="#" class="social-share-button-douban" data-title="<%=move.name%>,很好看哦。" data-id="<%=move.id%>"   data-img="<%=move.source_img_url%>"  data-site="douban" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到豆瓣"></a>
+         			<a href="#" data-id="<%=move.id%>"  class="social-share-button-qq-weibo" data-title="<%=move.name%>,很好看哦。"  data-img="<%=move.source_img_url%>"  data-site="tqq" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到腾讯微博"></a>
+         			<a href="#" data-id="<%=move.id%>"  class="social-share-button-qq" data-title="<%=move.name%>,很好看哦。"  data-img="<%=move.source_img_url%>"  data-site="qq" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到qq空间"></a>
+
+         	</div>
+         	<a ng-click="add_fav(<%=move.id%>)" id="fav_link">
+         		<%if move.fav %>
+         			已收藏
+         		<%else%>
+         			收藏
+         		<%end%>
+         	</a>
+		    </div>
+		    <div class="span5">
+				<div id="player"> 
+					
+				</div>
+				<div class="alert alert-info">
+  					播放列表(点击播放)
+				</div>
+				
+				<div class="row" id="play_btn">
+			
+				<%move[:p_list] =JSON.parse(move[:p_list])%>
+				
+				<%
+					  def get_name_by_url(url, name)
+					    temp = url.split("|")
+					    temp = temp[temp.length-1].split(".")
+					    if temp.length > 2
+					    	temp = temp[0]+temp[1]
+					    else
+					    	temp = temp[0]
+					    end
+					    return temp
+					    
+					  end   
+				%>		
+
+				<% move[:p_list].length.times do |i| %>	
+					<%if  !["大陆剧", "港台剧", "欧美剧", "日韩剧"].include? move[:label] %>
+					<a  id="<%=i%>_c"  class="span2"  href="javascript:void(0)" onclick="window.play('<%=move[:p_list][i]%>', <%=i%>, <%=move.id%>)">
+				     	
+						<%=get_name_by_url move[:p_list][i], move['name']%>
+					</a>
+					<%end%>
+					<%if (["大陆剧", "港台剧", "欧美剧", "日韩剧"].include? move[:label])%>
+					<a id="<%=i%>_c"  class="span2"  href="javascript:void(0)" onclick="window.play('<%=move[:p_list][i]%>', <%=i%> , <%=move.id%>)">
+						第<%=i+1%>集
+					</a>
+					<% end %>
+				<%end%>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</div>

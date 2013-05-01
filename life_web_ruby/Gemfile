@@ -1,0 +1,12 @@
+source 'http://rubygems.org'
+gem 'rspec'
+gem 'rspec-mocks'
+gem 'second_level_cache', :git => 'git://github.com/csdn-dev/second_level_cache.git' , :branch => "master"
+gem 'mongo'
+gem 'bson'
+gem 'bson_ext'
+gem 'activerecord'
+gem 'rake'
+gem 'sinatra-synchrony'
+gem 'thin'
+gem 'sinatra-contrib'

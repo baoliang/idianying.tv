@@ -1,0 +1,3 @@
+task :c do 
+  system("coffee -c ./static/js/move.coffee")
+end
