@@ -1,0 +1,760 @@
+D, [2012-08-14T15:06:10.557964 #11016] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-08-14T15:06:10.558095 #11016]  INFO -- : Migrating to CreateUsers (1)
+D, [2012-08-14T15:06:10.558423 #11016] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-08-14T15:06:10.561361 #11016] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-08-14T15:06:45.705826 #11065] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-08-14T15:06:45.705967 #11065]  INFO -- : Migrating to CreateUsers (1)
+D, [2012-08-14T15:06:45.706276 #11065] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-08-14T15:06:45.709914 #11065] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+D, [2012-08-14T15:06:53.737608 #11073] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-08-14T15:06:53.737707 #11073]  INFO -- : Migrating to CreateUsers (1)
+D, [2012-08-14T15:06:53.737914 #11073] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-08-14T15:06:53.739978 #11073] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-08-14T15:07:34.492684 #11111] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-08-14T15:07:34.492781 #11111]  INFO -- : Migrating to CreateUsers (1)
+D, [2012-08-14T15:07:34.493051 #11111] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-08-14T15:07:34.495086 #11111] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+D, [2012-08-14T15:07:56.007868 #11140] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-08-14T15:07:56.007967 #11140]  INFO -- : Migrating to CreateUsers (1)
+D, [2012-08-14T15:07:56.008198 #11140] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-08-14T15:07:56.054410 #11140] DEBUG -- :   [1m[36m (43.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "sex" character varying(255), "email" character varying(255), "pwd" character varying(255), "head_img" character varying(255)) [0m
+D, [2012-08-14T15:07:56.059798 #11140] DEBUG -- :   [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('1')
+D, [2012-08-14T15:07:56.061822 #11140] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+D, [2012-09-04T22:43:45.463691 #3201] DEBUG -- :   [1m[36m (40.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-04T22:43:45.463910 #3201]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-04T22:43:45.463981 #3201]  INFO -- : Migrating to CreateMoves (2)
+D, [2012-09-04T22:43:45.464587 #3201] DEBUG -- :   [1m[35m (0.4ms)[0m  BEGIN
+D, [2012-09-04T22:43:45.467773 #3201] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+D, [2012-09-04T22:44:58.124956 #3228] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-04T22:44:58.125055 #3228]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-04T22:44:58.125084 #3228]  INFO -- : Migrating to CreateMoves (2)
+D, [2012-09-04T22:44:58.125341 #3228] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-04T22:44:58.127016 #3228] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-09-04T22:45:13.201203 #3338] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-04T22:45:13.201305 #3338]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-04T22:45:13.201337 #3338]  INFO -- : Migrating to CreateMoves (2)
+D, [2012-09-04T22:45:13.201545 #3338] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-04T22:45:13.203485 #3338] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+D, [2012-09-04T22:45:18.642953 #3345] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-04T22:45:18.643051 #3345]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-04T22:45:18.643080 #3345]  INFO -- : Migrating to CreateMoves (2)
+D, [2012-09-04T22:45:18.643286 #3345] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-04T22:45:18.644946 #3345] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-09-04T22:45:55.240986 #3361] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-04T22:45:55.241089 #3361]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-04T22:45:55.241121 #3361]  INFO -- : Migrating to CreateMoves (2)
+D, [2012-09-04T22:45:55.241404 #3361] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-04T22:45:55.549730 #3361] DEBUG -- :   [1m[36m (305.6ms)[0m  [1mCREATE TABLE "moves" ("id" serial primary key, "name" character varying(255), "url" character varying(255), "desc" character varying(255), "lab" character varying(255)) [0m
+D, [2012-09-04T22:45:55.568964 #3361] DEBUG -- :   [1m[35m (11.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('2')
+D, [2012-09-04T22:45:55.588768 #3361] DEBUG -- :   [1m[36m (19.5ms)[0m  [1mCOMMIT[0m
+D, [2012-09-04T23:16:53.005576 #3837] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-04T23:16:53.005680 #3837]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-04T23:16:53.005711 #3837]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-04T23:16:53.005736 #3837]  INFO -- : Migrating to EditMovesDesc (3)
+D, [2012-09-04T23:16:53.006031 #3837] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-09-04T23:16:53.008234 #3837] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-09-04T23:20:15.581759 #3897] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-04T23:20:15.581859 #3897]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-04T23:20:15.581888 #3897]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-04T23:20:15.581910 #3897]  INFO -- : Migrating to EditMoves (3)
+D, [2012-09-04T23:20:15.582113 #3897] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-04T23:20:15.585417 #3897] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mALTER TABLE "moves" ALTER COLUMN "desc" TYPE text[0m
+D, [2012-09-04T23:20:15.588785 #3897] DEBUG -- :   [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('3')
+D, [2012-09-04T23:20:15.591157 #3897] DEBUG -- :   [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+D, [2012-09-07T19:03:14.981072 #8221] DEBUG -- :   [1m[36m (51.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-07T19:03:14.981258 #8221]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-07T19:03:14.981330 #8221]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-07T19:03:14.981406 #8221]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-07T19:03:14.981478 #8221]  INFO -- : Migrating to AddColMove (4)
+D, [2012-09-07T19:03:14.981903 #8221] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-09-07T19:03:14.984851 #8221] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+D, [2012-09-07T19:04:54.434223 #8304] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-07T19:04:54.434328 #8304]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-07T19:04:54.434357 #8304]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-07T19:04:54.434380 #8304]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-07T19:04:54.434403 #8304]  INFO -- : Migrating to AddColMove (4)
+D, [2012-09-07T19:04:54.434660 #8304] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-07T19:04:54.436601 #8304] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-09-08T11:32:38.915482 #2191] DEBUG -- :   [1m[36m (67.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-08T11:32:38.915713 #2191]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-08T11:32:38.915783 #2191]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-08T11:32:38.915839 #2191]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-08T11:32:38.915894 #2191]  INFO -- : Migrating to AddColMove (4)
+D, [2012-09-08T11:32:38.916481 #2191] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2012-09-08T11:32:38.930027 #2191] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+D, [2012-09-08T11:32:50.741529 #2199] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-08T11:32:50.741630 #2199]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-08T11:32:50.741659 #2199]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-08T11:32:50.741682 #2199]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-08T11:32:50.741705 #2199]  INFO -- : Migrating to AddColMove (4)
+D, [2012-09-08T11:32:50.741957 #2199] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-08T11:32:50.743869 #2199] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-09-08T11:34:07.621413 #2224] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-08T11:34:07.621515 #2224]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-08T11:34:07.621543 #2224]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-08T11:34:07.621567 #2224]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-08T11:34:07.621590 #2224]  INFO -- : Migrating to AddColMove (4)
+D, [2012-09-08T11:34:07.621846 #2224] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-08T11:34:07.720718 #2224] DEBUG -- :   [1m[36m (96.8ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "director" character varying(255)[0m
+D, [2012-09-08T11:34:07.723797 #2224] DEBUG -- :   [1m[35m (2.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "actor" text
+D, [2012-09-08T11:34:07.725244 #2224] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "status" character varying(255)[0m
+D, [2012-09-08T11:34:07.726286 #2224] DEBUG -- :   [1m[35m (0.6ms)[0m  ALTER TABLE "moves" ADD COLUMN "label" character varying(255)
+D, [2012-09-08T11:34:07.727226 #2224] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "pic" character varying(255)[0m
+D, [2012-09-08T11:34:07.747669 #2224] DEBUG -- :   [1m[35m (15.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('4')
+D, [2012-09-08T11:34:07.749490 #2224] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+D, [2012-09-08T21:35:58.537324 #5822] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-08T21:35:58.537529 #5822]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-08T21:35:58.537590 #5822]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-08T21:35:58.537635 #5822]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-08T21:35:58.537677 #5822]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-08T21:35:58.537720 #5822]  INFO -- : Migrating to AddMovesType (5)
+D, [2012-09-08T21:35:58.538070 #5822] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-08T21:35:58.542938 #5822] DEBUG -- :   [1m[36m (1.3ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "type" character varying(255)[0m
+D, [2012-09-08T21:35:58.546586 #5822] DEBUG -- :   [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('5')
+D, [2012-09-08T21:35:58.558235 #5822] DEBUG -- :   [1m[36m (11.4ms)[0m  [1mCOMMIT[0m
+D, [2012-09-09T08:09:08.674761 #945] DEBUG -- :   [1m[36m (41.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-09T08:09:08.674992 #945]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-09T08:09:08.675062 #945]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-09T08:09:08.675119 #945]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-09T08:09:08.675174 #945]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-09T08:09:08.675227 #945]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-09T08:09:08.675280 #945]  INFO -- : Migrating to CreateLianxuju (6)
+D, [2012-09-09T08:09:08.675875 #945] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2012-09-09T08:09:08.900365 #945] DEBUG -- :   [1m[36m (220.8ms)[0m  [1mCREATE TABLE "lianxujus" ("id" serial primary key, "name" character varying(255), "num" character varying(255)) [0m
+D, [2012-09-09T08:09:08.916387 #945] DEBUG -- :   [1m[35m (11.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('6')
+D, [2012-09-09T08:09:08.948099 #945] DEBUG -- :   [1m[36m (31.5ms)[0m  [1mCOMMIT[0m
+D, [2012-09-15T08:19:03.392415 #1863] DEBUG -- :   [1m[36m (15.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-15T08:19:03.392664 #1863]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-15T08:19:03.392736 #1863]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-15T08:19:03.392794 #1863]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-15T08:19:03.392851 #1863]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-15T08:19:03.392906 #1863]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-15T08:19:03.392962 #1863]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-15T08:19:03.393019 #1863]  INFO -- : Migrating to AddColLianxuju (7)
+D, [2012-09-15T08:19:03.393624 #1863] DEBUG -- :   [1m[35m (0.4ms)[0m  BEGIN
+D, [2012-09-15T08:19:03.442145 #1863] DEBUG -- :   [1m[36m (45.0ms)[0m  [1mALTER TABLE "lianxujus" ADD COLUMN "url" character varying(255)[0m
+D, [2012-09-15T08:19:03.459471 #1863] DEBUG -- :   [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('7')
+D, [2012-09-15T08:19:03.460963 #1863] DEBUG -- :   [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+D, [2012-09-15T09:24:31.207831 #2578] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-15T09:24:31.207945 #2578]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-15T09:24:31.207976 #2578]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-15T09:24:31.208001 #2578]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-15T09:24:31.208023 #2578]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-15T09:24:31.208046 #2578]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-15T09:24:31.208069 #2578]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-15T09:24:31.208104 #2578]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-15T09:24:31.208129 #2578]  INFO -- : Migrating to AddColMoveType (8)
+D, [2012-09-15T09:24:31.208425 #2578] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-09-15T09:24:31.211298 #2578] DEBUG -- :   [1m[36m (0.9ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "types" character varying(255)[0m
+D, [2012-09-15T09:24:31.282278 #2578] DEBUG -- :   [1m[35m (70.6ms)[0m  ALTER TABLE "moves" DROP "type"
+D, [2012-09-15T09:24:31.284330 #2578] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mALTER TABLE "moves" DROP "string"[0m
+D, [2012-09-15T09:24:31.284438 #2578] DEBUG -- : PG::Error: ERROR:  column "string" of relation "moves" does not exist
+: ALTER TABLE "moves" DROP "string"
+D, [2012-09-15T09:24:31.284871 #2578] DEBUG -- :   [1m[35m (0.2ms)[0m  ROLLBACK
+D, [2012-09-15T09:25:49.029331 #2595] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-15T09:25:49.029450 #2595]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-15T09:25:49.029482 #2595]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-15T09:25:49.029507 #2595]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-15T09:25:49.029531 #2595]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-15T09:25:49.029555 #2595]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-15T09:25:49.029578 #2595]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-15T09:25:49.029602 #2595]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-15T09:25:49.029625 #2595]  INFO -- : Migrating to AddColMoveType (8)
+D, [2012-09-15T09:25:49.029857 #2595] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-15T09:25:49.032543 #2595] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "types" character varying(255)[0m
+D, [2012-09-15T09:25:49.033524 #2595] DEBUG -- :   [1m[35m (0.6ms)[0m  ALTER TABLE "moves" DROP "type"
+D, [2012-09-15T09:25:49.037023 #2595] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('8')[0m
+D, [2012-09-15T09:25:49.039408 #2595] DEBUG -- :   [1m[35m (2.2ms)[0m  COMMIT
+D, [2012-09-25T13:25:25.968769 #3717] DEBUG -- :   [1m[36m (81.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-25T13:25:25.968901 #3717]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-25T13:25:25.968932 #3717]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-25T13:25:25.968955 #3717]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-25T13:25:25.968978 #3717]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-25T13:25:25.969001 #3717]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-25T13:25:25.969023 #3717]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-25T13:25:25.969046 #3717]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-25T13:25:25.969068 #3717]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-25T13:25:25.969091 #3717]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+D, [2012-09-25T13:25:25.988589 #3717] DEBUG -- :   [1m[35m (19.3ms)[0m  BEGIN
+D, [2012-09-25T13:25:26.118365 #3717] DEBUG -- :   [1m[36m (121.7ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "updated_at" timestamp[0m
+D, [2012-09-25T13:25:26.142984 #3717] DEBUG -- :   [1m[35m (19.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('9')
+D, [2012-09-25T13:25:26.158832 #3717] DEBUG -- :   [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+D, [2012-09-26T13:04:42.901561 #11355] DEBUG -- :   [1m[36m (17.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-26T13:04:42.901722 #11355]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-26T13:04:42.901773 #11355]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-26T13:04:42.901809 #11355]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-26T13:04:42.901859 #11355]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-26T13:04:42.901915 #11355]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-26T13:04:42.901973 #11355]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-26T13:04:42.902014 #11355]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-26T13:04:42.902046 #11355]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-26T13:04:42.902078 #11355]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-09-26T13:04:42.902110 #11355]  INFO -- : Migrating to AddColMoveMore (10)
+D, [2012-09-26T13:04:42.902513 #11355] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-26T13:04:42.906155 #11355] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-09-26T13:06:54.194996 #11385] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-26T13:06:54.195125 #11385]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-26T13:06:54.195157 #11385]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-26T13:06:54.195182 #11385]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-26T13:06:54.195205 #11385]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-26T13:06:54.195228 #11385]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-26T13:06:54.195251 #11385]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-26T13:06:54.195274 #11385]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-26T13:06:54.195298 #11385]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-26T13:06:54.195321 #11385]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-09-26T13:06:54.195344 #11385]  INFO -- : Migrating to AddColMoveMore (10)
+D, [2012-09-26T13:06:54.195685 #11385] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-09-26T13:06:54.286163 #11385] DEBUG -- :   [1m[36m (87.7ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "created_at" timestamp[0m
+D, [2012-09-26T13:06:54.287277 #11385] DEBUG -- :   [1m[35m (0.6ms)[0m  ALTER TABLE "moves" ADD COLUMN "img_id" character varying(255)
+D, [2012-09-26T13:06:54.288362 #11385] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "version" character varying(255)[0m
+D, [2012-09-26T13:06:54.290596 #11385] DEBUG -- :   [1m[35m (1.7ms)[0m  ALTER TABLE "moves" ADD COLUMN "source_img_url" text
+D, [2012-09-26T13:06:54.291668 #11385] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "p_list" json[0m
+D, [2012-09-26T13:06:54.292811 #11385] DEBUG -- :   [1m[35m (0.7ms)[0m  ALTER TABLE "moves" ADD COLUMN "language" character varying(255)
+D, [2012-09-26T13:06:54.294305 #11385] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "area" character varying(255)[0m
+D, [2012-09-26T13:06:54.295690 #11385] DEBUG -- :   [1m[35m (0.8ms)[0m  ALTER TABLE "moves" ADD COLUMN "upload_time" character varying(255)
+D, [2012-09-26T13:06:54.326390 #11385] DEBUG -- :   [1m[36m (23.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('10')[0m
+D, [2012-09-26T13:06:54.346054 #11385] DEBUG -- :   [1m[35m (19.3ms)[0m  COMMIT
+D, [2012-09-26T13:20:50.090945 #11534] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-26T13:20:50.091113 #11534]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-26T13:20:50.091155 #11534]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-26T13:20:50.091195 #11534]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-26T13:20:50.091232 #11534]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-26T13:20:50.091269 #11534]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-26T13:20:50.091301 #11534]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-26T13:20:50.091346 #11534]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-26T13:20:50.091379 #11534]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-26T13:20:50.091412 #11534]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-09-26T13:20:50.091448 #11534]  INFO -- : Migrating to AddColMoveMore (10)
+D, [2012-09-26T13:54:08.822631 #11957] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-26T13:54:08.822804 #11957]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-26T13:54:08.822855 #11957]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-26T13:54:08.822902 #11957]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-26T13:54:08.822947 #11957]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-26T13:54:08.822990 #11957]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-26T13:54:08.823031 #11957]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-26T13:54:08.823072 #11957]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-26T13:54:08.823112 #11957]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-26T13:54:08.823155 #11957]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-09-26T13:54:08.823195 #11957]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-09-26T13:54:08.823240 #11957]  INFO -- : Migrating to EditMovesUpdate (11)
+D, [2012-09-26T13:54:08.823704 #11957] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2012-09-26T13:54:08.827060 #11957] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-09-26T13:54:49.321432 #11971] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-26T13:54:49.321590 #11971]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-26T13:54:49.321624 #11971]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-26T13:54:49.321648 #11971]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-26T13:54:49.321671 #11971]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-26T13:54:49.321693 #11971]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-26T13:54:49.321716 #11971]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-26T13:54:49.321738 #11971]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-26T13:54:49.321761 #11971]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-26T13:54:49.321783 #11971]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-09-26T13:54:49.321806 #11971]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-09-26T13:54:49.321828 #11971]  INFO -- : Migrating to EditMovesUpdate (11)
+D, [2012-09-26T13:54:49.322103 #11971] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-26T13:54:49.324261 #11971] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+D, [2012-09-26T13:55:17.769622 #11982] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-26T13:55:17.769746 #11982]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-26T13:55:17.769777 #11982]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-26T13:55:17.769803 #11982]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-26T13:55:17.769828 #11982]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-26T13:55:17.769851 #11982]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-26T13:55:17.769874 #11982]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-26T13:55:17.769898 #11982]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-26T13:55:17.769921 #11982]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-26T13:55:17.769945 #11982]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-09-26T13:55:17.769974 #11982]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-09-26T13:55:17.769998 #11982]  INFO -- : Migrating to EditMovesUpdate (11)
+D, [2012-09-26T13:55:17.770277 #11982] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-26T13:55:17.968394 #11982] DEBUG -- :   [1m[36m (195.4ms)[0m  [1mALTER TABLE "moves" ALTER COLUMN "updated_at" TYPE character varying(255)[0m
+D, [2012-09-26T13:55:17.972750 #11982] DEBUG -- :   [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('11')
+D, [2012-09-26T13:55:18.036244 #11982] DEBUG -- :   [1m[36m (63.2ms)[0m  [1mCOMMIT[0m
+D, [2012-09-27T06:01:54.730970 #20353] DEBUG -- :   [1m[36m (12.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+D, [2012-09-27T06:01:54.734541 #20353] DEBUG -- :   [1m[35m (3.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+D, [2012-09-27T06:01:54.755609 #20353] DEBUG -- :   [1m[36m (20.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-09-27T06:01:54.761193 #20353] DEBUG -- :   [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+I, [2012-09-27T06:01:54.761341 #20353]  INFO -- : Migrating to CreateUsers (1)
+D, [2012-09-27T06:01:54.761654 #20353] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.791483 #20353] DEBUG -- :   [1m[35m (27.9ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "sex" character varying(255), "email" character varying(255), "pwd" character varying(255), "head_img" character varying(255)) 
+D, [2012-09-27T06:01:54.794498 #20353] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('1')[0m
+D, [2012-09-27T06:01:54.798893 #20353] DEBUG -- :   [1m[35m (4.2ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.798999 #20353]  INFO -- : Migrating to CreateMoves (2)
+D, [2012-09-27T06:01:54.799447 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.827490 #20353] DEBUG -- :   [1m[35m (26.3ms)[0m  CREATE TABLE "moves" ("id" serial primary key, "name" character varying(255), "url" character varying(255), "desc" character varying(255), "lab" character varying(255)) 
+D, [2012-09-27T06:01:54.829302 #20353] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('2')[0m
+D, [2012-09-27T06:01:54.835850 #20353] DEBUG -- :   [1m[35m (6.4ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.835918 #20353]  INFO -- : Migrating to EditMoves (3)
+D, [2012-09-27T06:01:54.836218 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.837801 #20353] DEBUG -- :   [1m[35m (0.4ms)[0m  ALTER TABLE "moves" ALTER COLUMN "desc" TYPE text
+D, [2012-09-27T06:01:54.839618 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('3')[0m
+D, [2012-09-27T06:01:54.843254 #20353] DEBUG -- :   [1m[35m (3.5ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.843342 #20353]  INFO -- : Migrating to AddColMove (4)
+D, [2012-09-27T06:01:54.843639 #20353] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.845098 #20353] DEBUG -- :   [1m[35m (0.4ms)[0m  ALTER TABLE "moves" ADD COLUMN "director" character varying(255)
+D, [2012-09-27T06:01:54.845849 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "actor" text[0m
+D, [2012-09-27T06:01:54.846610 #20353] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "status" character varying(255)
+D, [2012-09-27T06:01:54.847470 #20353] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "label" character varying(255)[0m
+D, [2012-09-27T06:01:54.848233 #20353] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "pic" character varying(255)
+D, [2012-09-27T06:01:54.850356 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('4')[0m
+D, [2012-09-27T06:01:54.855892 #20353] DEBUG -- :   [1m[35m (5.3ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.855973 #20353]  INFO -- : Migrating to AddMovesType (5)
+D, [2012-09-27T06:01:54.856272 #20353] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.857931 #20353] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "type" character varying(255)
+D, [2012-09-27T06:01:54.859809 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('5')[0m
+D, [2012-09-27T06:01:54.863202 #20353] DEBUG -- :   [1m[35m (3.3ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.863264 #20353]  INFO -- : Migrating to CreateLianxuju (6)
+D, [2012-09-27T06:01:54.863514 #20353] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.891690 #20353] DEBUG -- :   [1m[35m (26.8ms)[0m  CREATE TABLE "lianxujus" ("id" serial primary key, "name" character varying(255), "num" character varying(255)) 
+D, [2012-09-27T06:01:54.893674 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('6')[0m
+D, [2012-09-27T06:01:54.896896 #20353] DEBUG -- :   [1m[35m (3.0ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.896992 #20353]  INFO -- : Migrating to AddColLianxuju (7)
+D, [2012-09-27T06:01:54.897348 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.899255 #20353] DEBUG -- :   [1m[35m (0.4ms)[0m  ALTER TABLE "lianxujus" ADD COLUMN "url" character varying(255)
+D, [2012-09-27T06:01:54.901525 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('7')[0m
+D, [2012-09-27T06:01:54.903236 #20353] DEBUG -- :   [1m[35m (1.6ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.903307 #20353]  INFO -- : Migrating to AddColMoveType (8)
+D, [2012-09-27T06:01:54.903676 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.905388 #20353] DEBUG -- :   [1m[35m (0.4ms)[0m  ALTER TABLE "moves" ADD COLUMN "types" character varying(255)
+D, [2012-09-27T06:01:54.906486 #20353] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mALTER TABLE "moves" DROP "type"[0m
+D, [2012-09-27T06:01:54.908489 #20353] DEBUG -- :   [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('8')
+D, [2012-09-27T06:01:54.911220 #20353] DEBUG -- :   [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+I, [2012-09-27T06:01:54.911285 #20353]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+D, [2012-09-27T06:01:54.911545 #20353] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-27T06:01:54.913043 #20353] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "updated_at" timestamp[0m
+D, [2012-09-27T06:01:54.915128 #20353] DEBUG -- :   [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('9')
+D, [2012-09-27T06:01:54.919295 #20353] DEBUG -- :   [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+I, [2012-09-27T06:01:54.919368 #20353]  INFO -- : Migrating to AddColMoveMore (10)
+D, [2012-09-27T06:01:54.919652 #20353] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-09-27T06:01:54.921395 #20353] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "created_at" timestamp[0m
+D, [2012-09-27T06:01:54.922134 #20353] DEBUG -- :   [1m[35m (0.2ms)[0m  ALTER TABLE "moves" ADD COLUMN "img_id" character varying(255)
+D, [2012-09-27T06:01:54.922852 #20353] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "version" character varying(255)[0m
+D, [2012-09-27T06:01:54.923569 #20353] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "source_img_url" text
+D, [2012-09-27T06:01:54.924332 #20353] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "p_list" json[0m
+D, [2012-09-27T06:01:54.925355 #20353] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "language" character varying(255)
+D, [2012-09-27T06:01:54.926335 #20353] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "area" character varying(255)[0m
+D, [2012-09-27T06:01:54.927302 #20353] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "upload_time" character varying(255)
+D, [2012-09-27T06:01:54.929542 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('10')[0m
+D, [2012-09-27T06:01:54.931444 #20353] DEBUG -- :   [1m[35m (1.8ms)[0m  COMMIT
+I, [2012-09-27T06:01:54.931509 #20353]  INFO -- : Migrating to EditMovesUpdate (11)
+D, [2012-09-27T06:01:54.931821 #20353] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2012-09-27T06:01:54.964031 #20353] DEBUG -- :   [1m[35m (31.1ms)[0m  ALTER TABLE "moves" ALTER COLUMN "updated_at" TYPE character varying(255)
+D, [2012-09-27T06:01:54.965949 #20353] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('11')[0m
+D, [2012-09-27T06:01:54.972017 #20353] DEBUG -- :   [1m[35m (5.9ms)[0m  COMMIT
+D, [2012-09-27T06:31:45.928893 #21819] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-09-27T06:31:45.929070 #21819]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-09-27T06:31:45.929122 #21819]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-09-27T06:31:45.929164 #21819]  INFO -- : Migrating to EditMoves (3)
+I, [2012-09-27T06:31:45.929203 #21819]  INFO -- : Migrating to AddColMove (4)
+I, [2012-09-27T06:31:45.929241 #21819]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-09-27T06:31:45.929279 #21819]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-09-27T06:31:45.929317 #21819]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-09-27T06:31:45.929356 #21819]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-09-27T06:31:45.929394 #21819]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-09-27T06:31:45.929433 #21819]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-09-27T06:31:45.929484 #21819]  INFO -- : Migrating to EditMovesUpdate (11)
+D, [2012-10-04T11:34:10.028142 #5185] DEBUG -- :   [1m[36m (53.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-04T11:34:10.028341 #5185]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-04T11:34:10.028396 #5185]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-04T11:34:10.028439 #5185]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-04T11:34:10.028480 #5185]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-04T11:34:10.028520 #5185]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-04T11:34:10.028561 #5185]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-04T11:34:10.028603 #5185]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-04T11:34:10.028643 #5185]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-04T11:34:10.028684 #5185]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-04T11:34:10.028726 #5185]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-04T11:34:10.028767 #5185]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-04T11:34:10.028809 #5185]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+D, [2012-10-04T11:34:10.029330 #5185] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2012-10-04T11:34:10.033082 #5185] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+D, [2012-10-04T11:34:46.910265 #5198] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-04T11:34:46.910452 #5198]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-04T11:34:46.910508 #5198]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-04T11:34:46.910558 #5198]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-04T11:34:46.910606 #5198]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-04T11:34:46.910653 #5198]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-04T11:34:46.910701 #5198]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-04T11:34:46.910749 #5198]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-04T11:34:46.910802 #5198]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-04T11:34:46.910846 #5198]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-04T11:34:46.910890 #5198]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-04T11:34:46.910934 #5198]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-04T11:34:46.910978 #5198]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+D, [2012-10-04T11:34:46.911364 #5198] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-10-04T11:34:46.914829 #5198] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-10-04T11:35:07.780732 #5208] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-04T11:35:07.780911 #5208]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-04T11:35:07.780964 #5208]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-04T11:35:07.781008 #5208]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-04T11:35:07.781053 #5208]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-04T11:35:07.781097 #5208]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-04T11:35:07.781142 #5208]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-04T11:35:07.781182 #5208]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-04T11:35:07.781223 #5208]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-04T11:35:07.781264 #5208]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-04T11:35:07.781306 #5208]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-04T11:35:07.781346 #5208]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-04T11:35:07.781387 #5208]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+D, [2012-10-04T11:35:07.781761 #5208] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-10-04T11:35:07.978385 #5208] DEBUG -- :   [1m[36m (193.4ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "update_time" timestamp[0m
+D, [2012-10-04T11:35:08.013795 #5208] DEBUG -- :   [1m[35m (34.7ms)[0m  ALTER TABLE "moves" DROP "types"
+D, [2012-10-04T11:35:08.015535 #5208] DEBUG -- :   [1m[36m (1.1ms)[0m  [1mALTER TABLE "moves" DROP "url"[0m
+D, [2012-10-04T11:35:08.016612 #5208] DEBUG -- :   [1m[35m (0.6ms)[0m  ALTER TABLE "moves" DROP "pic"
+D, [2012-10-04T11:35:08.017655 #5208] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mALTER TABLE "moves" DROP "lab"[0m
+D, [2012-10-04T11:35:08.046594 #5208] DEBUG -- :   [1m[35m (24.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('12')
+D, [2012-10-04T11:35:08.085069 #5208] DEBUG -- :   [1m[36m (38.2ms)[0m  [1mCOMMIT[0m
+D, [2012-10-12T11:42:56.004286 #3617] DEBUG -- :   [1m[36m (56.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-12T11:42:56.004467 #3617]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-12T11:42:56.004512 #3617]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-12T11:42:56.004547 #3617]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-12T11:42:56.004592 #3617]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-12T11:42:56.004651 #3617]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-12T11:42:56.004710 #3617]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-12T11:42:56.004773 #3617]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-12T11:42:56.004835 #3617]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-12T11:42:56.004889 #3617]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-12T11:42:56.004926 #3617]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-12T11:42:56.004961 #3617]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-12T11:42:56.004997 #3617]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-10-12T11:42:56.005032 #3617]  INFO -- : Migrating to EditMovesCol (13)
+D, [2012-10-12T11:42:56.005351 #3617] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-10-12T11:42:56.010065 #3617] DEBUG -- :   [1m[36m (1.3ms)[0m  [1mALTER TABLE "moves" ALTER COLUMN "describe" TYPE text[0m
+D, [2012-10-12T11:42:56.010133 #3617] DEBUG -- : PG::Error: ERROR:  column "describe" of relation "moves" does not exist
+: ALTER TABLE "moves" ALTER COLUMN "describe" TYPE text
+D, [2012-10-12T11:42:56.010410 #3617] DEBUG -- :   [1m[35m (0.1ms)[0m  ROLLBACK
+D, [2012-10-12T11:45:36.818738 #3658] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-12T11:45:36.818903 #3658]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-12T11:45:36.818936 #3658]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-12T11:45:36.818960 #3658]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-12T11:45:36.818982 #3658]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-12T11:45:36.819003 #3658]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-12T11:45:36.819025 #3658]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-12T11:45:36.819047 #3658]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-12T11:45:36.819068 #3658]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-12T11:45:36.819090 #3658]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-12T11:45:36.819113 #3658]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-12T11:45:36.819135 #3658]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-12T11:45:36.819157 #3658]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-10-12T11:45:36.819179 #3658]  INFO -- : Migrating to EditMovesCol (13)
+D, [2012-10-12T11:45:36.819461 #3658] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-10-12T11:45:36.822918 #3658] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mALTER TABLE "moves" RENAME COLUMN "desc" TO "describe"[0m
+D, [2012-10-12T11:45:36.897072 #3658] DEBUG -- :   [1m[35m (71.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('13')
+D, [2012-10-12T11:45:36.910616 #3658] DEBUG -- :   [1m[36m (13.3ms)[0m  [1mCOMMIT[0m
+D, [2012-10-28T22:11:46.926542 #21141] DEBUG -- :   [1m[36m (40.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-28T22:11:46.944397 #21141]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-28T22:11:46.944440 #21141]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-28T22:11:46.944464 #21141]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-28T22:11:46.944489 #21141]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-28T22:11:46.944513 #21141]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-28T22:11:46.944537 #21141]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-28T22:11:46.944561 #21141]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-28T22:11:46.944593 #21141]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-28T22:11:46.944619 #21141]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-28T22:11:46.944658 #21141]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-28T22:11:46.944684 #21141]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-28T22:11:46.944708 #21141]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-10-28T22:11:46.944732 #21141]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-10-28T22:11:46.944756 #21141]  INFO -- : Migrating to AddColMoveScore (14)
+D, [2012-10-28T22:11:46.945224 #21141] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-10-28T22:11:47.017610 #21141] DEBUG -- :   [1m[36m (16.2ms)[0m  [1mROLLBACK[0m
+D, [2012-10-28T22:12:59.827294 #21170] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-28T22:12:59.827426 #21170]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-28T22:12:59.827458 #21170]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-28T22:12:59.827483 #21170]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-28T22:12:59.827507 #21170]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-28T22:12:59.827529 #21170]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-28T22:12:59.827558 #21170]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-28T22:12:59.827582 #21170]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-28T22:12:59.827605 #21170]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-28T22:12:59.827628 #21170]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-28T22:12:59.827652 #21170]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-28T22:12:59.827675 #21170]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-28T22:12:59.827698 #21170]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-10-28T22:12:59.827721 #21170]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-10-28T22:12:59.827743 #21170]  INFO -- : Migrating to AddColMoveScore (14)
+D, [2012-10-28T22:12:59.828013 #21170] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-10-28T22:12:59.840064 #21170] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+D, [2012-10-28T22:13:51.179327 #21195] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-10-28T22:13:51.179458 #21195]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-10-28T22:13:51.179490 #21195]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-10-28T22:13:51.179516 #21195]  INFO -- : Migrating to EditMoves (3)
+I, [2012-10-28T22:13:51.179546 #21195]  INFO -- : Migrating to AddColMove (4)
+I, [2012-10-28T22:13:51.179580 #21195]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-10-28T22:13:51.179623 #21195]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-10-28T22:13:51.179654 #21195]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-10-28T22:13:51.179679 #21195]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-10-28T22:13:51.179703 #21195]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-10-28T22:13:51.179727 #21195]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-10-28T22:13:51.179751 #21195]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-10-28T22:13:51.179775 #21195]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-10-28T22:13:51.179798 #21195]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-10-28T22:13:51.179822 #21195]  INFO -- : Migrating to AddColMoveScore (14)
+D, [2012-10-28T22:13:51.180049 #21195] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-10-28T22:13:51.340659 #21195] DEBUG -- :   [1m[36m (114.4ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "score" int[0m
+D, [2012-10-28T22:13:51.341372 #21195] DEBUG -- :   [1m[35m (0.4ms)[0m  ALTER TABLE "moves" ADD COLUMN "json" json
+D, [2012-10-28T22:13:51.341883 #21195] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "weight" int[0m
+D, [2012-10-28T22:13:51.619578 #21195] DEBUG -- :   [1m[35m (277.0ms)[0m  CREATE TABLE "kv" ("id" serial primary key, "key" character varying(255), "value" json, "created_at" timestamp) 
+D, [2012-10-28T22:13:51.635882 #21195] DEBUG -- :   [1m[36m (15.3ms)[0m  [1mCREATE TABLE "historys" ("id" serial primary key, "move_id" int, "email" character varying(255), "created_at" timestamp) [0m
+D, [2012-10-28T22:13:51.652328 #21195] DEBUG -- :   [1m[35m (15.5ms)[0m  CREATE TABLE "favs" ("id" serial primary key, "move_id" int, "email" character varying(255), "created_at" timestamp) 
+D, [2012-10-28T22:13:51.671898 #21195] DEBUG -- :   [1m[36m (16.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('14')[0m
+D, [2012-10-28T22:13:51.695597 #21195] DEBUG -- :   [1m[35m (23.4ms)[0m  COMMIT
+D, [2012-11-07T16:20:09.978959 #6060] DEBUG -- :   [1m[36m (13.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-07T16:20:09.979096 #6060]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-07T16:20:09.979126 #6060]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-07T16:20:09.979149 #6060]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-07T16:20:09.979172 #6060]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-07T16:20:09.979194 #6060]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-07T16:20:09.979217 #6060]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-07T16:20:09.979239 #6060]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-07T16:20:09.979261 #6060]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-07T16:20:09.979283 #6060]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-07T16:20:09.979306 #6060]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-07T16:20:09.979328 #6060]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-07T16:20:09.979351 #6060]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-07T16:20:09.979373 #6060]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-07T16:20:09.979396 #6060]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-07T16:20:09.979418 #6060]  INFO -- : Migrating to AddColFavIndex (15)
+D, [2012-11-07T16:20:09.979646 #6060] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-11-07T16:20:09.982418 #6060] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-11-07T16:20:42.719476 #6072] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-07T16:20:42.719604 #6072]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-07T16:20:42.719636 #6072]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-07T16:20:42.719660 #6072]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-07T16:20:42.719684 #6072]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-07T16:20:42.719708 #6072]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-07T16:20:42.719731 #6072]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-07T16:20:42.719754 #6072]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-07T16:20:42.719777 #6072]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-07T16:20:42.719800 #6072]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-07T16:20:42.719824 #6072]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-07T16:20:42.719847 #6072]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-07T16:20:42.719871 #6072]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-07T16:20:42.719895 #6072]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-07T16:20:42.719927 #6072]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-07T16:20:42.719949 #6072]  INFO -- : Migrating to AddColFavIndex (15)
+D, [2012-11-07T16:20:42.720263 #6072] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-11-07T16:20:42.723340 #6072] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-11-07T16:21:11.479064 #6084] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-07T16:21:11.479192 #6084]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-07T16:21:11.479223 #6084]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-07T16:21:11.479247 #6084]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-07T16:21:11.479271 #6084]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-07T16:21:11.479294 #6084]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-07T16:21:11.479317 #6084]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-07T16:21:11.479340 #6084]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-07T16:21:11.479363 #6084]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-07T16:21:11.479385 #6084]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-07T16:21:11.479408 #6084]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-07T16:21:11.479431 #6084]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-07T16:21:11.479455 #6084]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-07T16:21:11.479478 #6084]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-07T16:21:11.479501 #6084]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-07T16:21:11.479529 #6084]  INFO -- : Migrating to AddColFavIndex (15)
+D, [2012-11-07T16:21:11.479763 #6084] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-11-07T16:21:11.482801 #6084] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mALTER TABLE "history" RENAME TO "histories"[0m
+D, [2012-11-07T16:21:11.482883 #6084] DEBUG -- : PG::Error: ERROR:  relation "history" does not exist
+: ALTER TABLE "history" RENAME TO "histories"
+D, [2012-11-07T16:21:11.483239 #6084] DEBUG -- :   [1m[35m (0.2ms)[0m  ROLLBACK
+D, [2012-11-07T16:21:50.617470 #6097] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-07T16:21:50.617608 #6097]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-07T16:21:50.617640 #6097]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-07T16:21:50.617666 #6097]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-07T16:21:50.617690 #6097]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-07T16:21:50.617714 #6097]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-07T16:21:50.617737 #6097]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-07T16:21:50.617761 #6097]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-07T16:21:50.617784 #6097]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-07T16:21:50.617808 #6097]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-07T16:21:50.617833 #6097]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-07T16:21:50.617857 #6097]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-07T16:21:50.617881 #6097]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-07T16:21:50.617905 #6097]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-07T16:21:50.617929 #6097]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-07T16:21:50.617953 #6097]  INFO -- : Migrating to AddColFavIndex (15)
+D, [2012-11-07T16:21:50.618165 #6097] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2012-11-07T16:21:50.622636 #6097] DEBUG -- :   [1m[36m (1.2ms)[0m  [1mALTER TABLE "historys" RENAME TO "histories"[0m
+D, [2012-11-07T16:21:50.626657 #6097] DEBUG -- :   [1m[35mPK and serial sequence (3.8ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"histories"'::regclass
+
+D, [2012-11-07T16:21:50.627245 #6097] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mALTER TABLE "historys_id_seq" RENAME TO "histories_id_seq"[0m
+D, [2012-11-07T16:21:50.697784 #6097] DEBUG -- :   [1m[35m (70.1ms)[0m  ALTER TABLE "histories" ADD COLUMN "index" int
+D, [2012-11-07T16:21:50.715980 #6097] DEBUG -- :   [1m[36m (15.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('15')[0m
+D, [2012-11-07T16:21:50.717316 #6097] DEBUG -- :   [1m[35m (1.1ms)[0m  COMMIT
+D, [2012-11-20T14:57:51.609621 #6589] DEBUG -- :   [1m[36m (57.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-20T14:57:51.609796 #6589]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-20T14:57:51.609838 #6589]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-20T14:57:51.609872 #6589]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-20T14:57:51.609904 #6589]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-20T14:57:51.609935 #6589]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-20T14:57:51.609966 #6589]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-20T14:57:51.609998 #6589]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-20T14:57:51.610029 #6589]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-20T14:57:51.610060 #6589]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-20T14:57:51.610091 #6589]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-20T14:57:51.610124 #6589]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-20T14:57:51.610156 #6589]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-20T14:57:51.610188 #6589]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-20T14:57:51.610220 #6589]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-20T14:57:51.610252 #6589]  INFO -- : Migrating to AddColFavIndex (15)
+I, [2012-11-20T14:57:51.610284 #6589]  INFO -- : Migrating to AddColHot (16)
+D, [2012-11-20T14:57:51.610730 #6589] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2012-11-20T14:57:51.614261 #6589] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+D, [2012-11-20T15:08:10.449619 #7341] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-20T15:08:10.449742 #7341]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-20T15:08:10.449772 #7341]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-20T15:08:10.449795 #7341]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-20T15:08:10.449817 #7341]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-20T15:08:10.449840 #7341]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-20T15:08:10.449862 #7341]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-20T15:08:10.449884 #7341]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-20T15:08:10.449906 #7341]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-20T15:08:10.449928 #7341]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-20T15:08:10.449950 #7341]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-20T15:08:10.449973 #7341]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-20T15:08:10.449995 #7341]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-20T15:08:10.450017 #7341]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-20T15:08:10.450039 #7341]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-20T15:08:10.450061 #7341]  INFO -- : Migrating to AddColFavIndex (15)
+I, [2012-11-20T15:08:10.450083 #7341]  INFO -- : Migrating to AddColHot (16)
+D, [2012-11-20T15:08:10.450403 #7341] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-11-20T15:08:10.501376 #7341] DEBUG -- :   [1m[36m (48.1ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "ups" int[0m
+D, [2012-11-20T15:08:10.502424 #7341] DEBUG -- :   [1m[35m (0.6ms)[0m  ALTER TABLE "moves" ADD COLUMN "downs" inst
+D, [2012-11-20T15:08:10.502475 #7341] DEBUG -- : PG::Error: ERROR:  type "inst" does not exist
+LINE 1: ALTER TABLE "moves" ADD COLUMN "downs" inst
+                                               ^
+: ALTER TABLE "moves" ADD COLUMN "downs" inst
+D, [2012-11-20T15:08:10.502748 #7341] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+D, [2012-11-20T15:08:31.484793 #7379] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-20T15:08:31.484934 #7379]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-20T15:08:31.484966 #7379]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-20T15:08:31.484990 #7379]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-20T15:08:31.485014 #7379]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-20T15:08:31.485036 #7379]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-20T15:08:31.485059 #7379]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-20T15:08:31.485082 #7379]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-20T15:08:31.485113 #7379]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-20T15:08:31.485135 #7379]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-20T15:08:31.485157 #7379]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-20T15:08:31.485179 #7379]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-20T15:08:31.485201 #7379]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-20T15:08:31.485222 #7379]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-20T15:08:31.485244 #7379]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-20T15:08:31.485265 #7379]  INFO -- : Migrating to AddColFavIndex (15)
+I, [2012-11-20T15:08:31.485287 #7379]  INFO -- : Migrating to AddColHot (16)
+D, [2012-11-20T15:08:31.485597 #7379] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-11-20T15:08:31.489391 #7379] DEBUG -- :   [1m[36m (1.1ms)[0m  [1mALTER TABLE "moves" ADD COLUMN "ups" int[0m
+D, [2012-11-20T15:08:31.490025 #7379] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "moves" ADD COLUMN "downs" int
+D, [2012-11-20T15:08:31.506362 #7379] DEBUG -- :   [1m[36m (13.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('16')[0m
+D, [2012-11-20T15:08:31.507670 #7379] DEBUG -- :   [1m[35m (1.1ms)[0m  COMMIT
+D, [2012-11-20T15:22:47.303111 #7837] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-20T15:22:47.303241 #7837]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-20T15:22:47.303272 #7837]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-20T15:22:47.303297 #7837]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-20T15:22:47.303320 #7837]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-20T15:22:47.303343 #7837]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-20T15:22:47.303366 #7837]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-20T15:22:47.303388 #7837]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-20T15:22:47.303412 #7837]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-20T15:22:47.303434 #7837]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-20T15:22:47.303458 #7837]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-20T15:22:47.303481 #7837]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-20T15:22:47.303504 #7837]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-20T15:22:47.303527 #7837]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-20T15:22:47.303550 #7837]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-20T15:22:47.303581 #7837]  INFO -- : Migrating to AddColFavIndex (15)
+I, [2012-11-20T15:22:47.303602 #7837]  INFO -- : Migrating to AddColHot (16)
+I, [2012-11-20T15:22:47.303625 #7837]  INFO -- : Migrating to EditMovesScore (17)
+D, [2012-11-20T15:22:47.303934 #7837] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-11-20T15:22:57.043536 #7837] DEBUG -- :   [1m[36m (9736.8ms)[0m  [1mALTER TABLE "moves" ALTER COLUMN "score" TYPE float[0m
+D, [2012-11-20T15:22:57.049836 #7837] DEBUG -- :   [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('17')
+D, [2012-11-20T15:22:57.081734 #7837] DEBUG -- :   [1m[36m (31.7ms)[0m  [1mCOMMIT[0m
+D, [2012-11-20T16:05:21.832346 #9553] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-20T16:05:21.832480 #9553]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-20T16:05:21.832511 #9553]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-20T16:05:21.832534 #9553]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-20T16:05:21.832556 #9553]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-20T16:05:21.832579 #9553]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-20T16:05:21.832601 #9553]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-20T16:05:21.832623 #9553]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-20T16:05:21.832646 #9553]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-20T16:05:21.832669 #9553]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-20T16:05:21.832692 #9553]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-20T16:05:21.832714 #9553]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-20T16:05:21.832737 #9553]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-20T16:05:21.832759 #9553]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-20T16:05:21.832782 #9553]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-20T16:05:21.832805 #9553]  INFO -- : Migrating to AddColFavIndex (15)
+I, [2012-11-20T16:05:21.832828 #9553]  INFO -- : Migrating to AddColHot (16)
+I, [2012-11-20T16:05:21.832851 #9553]  INFO -- : Migrating to EditMovesScore (17)
+I, [2012-11-20T16:05:21.832881 #9553]  INFO -- : Migrating to SetMovesScoreZero (18)
+D, [2012-11-20T16:05:21.833243 #9553] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-11-20T16:05:21.835809 #9553] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+D, [2012-11-20T16:05:36.911720 #9583] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-20T16:05:36.911844 #9583]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-20T16:05:36.911873 #9583]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-20T16:05:36.911896 #9583]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-20T16:05:36.911918 #9583]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-20T16:05:36.911940 #9583]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-20T16:05:36.911962 #9583]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-20T16:05:36.911983 #9583]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-20T16:05:36.912006 #9583]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-20T16:05:36.912027 #9583]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-20T16:05:36.912049 #9583]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-20T16:05:36.912070 #9583]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-20T16:05:36.912092 #9583]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-20T16:05:36.912113 #9583]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-20T16:05:36.912135 #9583]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-20T16:05:36.912157 #9583]  INFO -- : Migrating to AddColFavIndex (15)
+I, [2012-11-20T16:05:36.912178 #9583]  INFO -- : Migrating to AddColHot (16)
+I, [2012-11-20T16:05:36.912200 #9583]  INFO -- : Migrating to EditMovesScore (17)
+I, [2012-11-20T16:05:36.912222 #9583]  INFO -- : Migrating to SetMovesScoreZero (18)
+D, [2012-11-20T16:05:36.912541 #9583] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2012-11-20T16:05:43.155765 #9583] DEBUG -- :   [1m[36m (6240.9ms)[0m  [1mupdate moves set score=0 where score is null[0m
+D, [2012-11-20T16:05:43.160162 #9583] DEBUG -- :   [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('18')
+D, [2012-11-20T16:05:43.164400 #9583] DEBUG -- :   [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+D, [2012-11-26T09:21:25.527158 #1607] DEBUG -- :   [1m[36m (6.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+I, [2012-11-26T09:21:25.527444 #1607]  INFO -- : Migrating to CreateUsers (1)
+I, [2012-11-26T09:21:25.527514 #1607]  INFO -- : Migrating to CreateMoves (2)
+I, [2012-11-26T09:21:25.527569 #1607]  INFO -- : Migrating to EditMoves (3)
+I, [2012-11-26T09:21:25.527623 #1607]  INFO -- : Migrating to AddColMove (4)
+I, [2012-11-26T09:21:25.527676 #1607]  INFO -- : Migrating to AddMovesType (5)
+I, [2012-11-26T09:21:25.527729 #1607]  INFO -- : Migrating to CreateLianxuju (6)
+I, [2012-11-26T09:21:25.527783 #1607]  INFO -- : Migrating to AddColLianxuju (7)
+I, [2012-11-26T09:21:25.527836 #1607]  INFO -- : Migrating to AddColMoveType (8)
+I, [2012-11-26T09:21:25.527888 #1607]  INFO -- : Migrating to AddColMoveUpdatedAt (9)
+I, [2012-11-26T09:21:25.527941 #1607]  INFO -- : Migrating to AddColMoveMore (10)
+I, [2012-11-26T09:21:25.527994 #1607]  INFO -- : Migrating to EditMovesUpdate (11)
+I, [2012-11-26T09:21:25.528047 #1607]  INFO -- : Migrating to AddColMoveUpdateTime (12)
+I, [2012-11-26T09:21:25.528101 #1607]  INFO -- : Migrating to EditMovesCol (13)
+I, [2012-11-26T09:21:25.528155 #1607]  INFO -- : Migrating to AddColMoveScore (14)
+I, [2012-11-26T09:21:25.528208 #1607]  INFO -- : Migrating to AddColFavIndex (15)
+I, [2012-11-26T09:21:25.528261 #1607]  INFO -- : Migrating to AddColHot (16)
+I, [2012-11-26T09:21:25.528314 #1607]  INFO -- : Migrating to EditMovesScore (17)
+I, [2012-11-26T09:21:25.528368 #1607]  INFO -- : Migrating to SetMovesScoreZero (18)
+I, [2012-11-26T09:21:25.528421 #1607]  INFO -- : Migrating to SetUpsDownZero (19)
+D, [2012-11-26T09:21:25.529102 #1607] DEBUG -- :   [1m[35m (0.5ms)[0m  BEGIN
+D, [2012-11-26T09:21:35.573473 #1607] DEBUG -- :   [1m[36m (10042.0ms)[0m  [1mupdate moves set ups=0 where ups is null[0m
+D, [2012-11-26T09:21:45.227508 #1607] DEBUG -- :   [1m[35m (9653.8ms)[0m  update moves set downs=0 where downs is null
+D, [2012-11-26T09:21:45.249025 #1607] DEBUG -- :   [1m[36m (17.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('19')[0m
+D, [2012-11-26T09:21:45.252565 #1607] DEBUG -- :   [1m[35m (3.2ms)[0m  COMMIT
