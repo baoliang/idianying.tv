@@ -1,2 +1,0 @@
-server:
-  rpc_host: "tcp://127.0.0.1:7000"
